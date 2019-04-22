@@ -90,6 +90,8 @@ class MainViewController: UIViewController {
 	
 	@objc func generateCall(_ sender: UIButton) {
 		let alert = UIAlertController(title: createCall(), message: nil, preferredStyle: UIAlertController.Style.alert)
+		let cancelAction:UIAlertAction = UIAlertAction(title: "頼み直す", style: UIAlertAction.Style.cancel)
+		alert.addAction(cancelAction)
 		present(alert, animated: true, completion: nil)
 	}
 	
